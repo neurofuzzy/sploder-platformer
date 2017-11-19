@@ -1,0 +1,308 @@
+/**
+* Fuz2d: 2d Gaming Engine
+* ----------------------------------------------------------------
+* ----------------------------------------------------------------
+* Copyright (C) 2008 Geoffrey P. Gaudreault
+* 
+*/
+
+
+package fuz2d.action.physics {
+
+	import flash.geom.Point;
+	import flash.utils.Dictionary;
+	import fuz2d.util.Geom2d;
+	
+	import fuz2d.action.physics.SimulationObject;
+	
+	public class SimulationGrid {
+		
+		private var _scaleX:uint;
+		private var _scaleY:uint;
+
+		private var _minScale:uint;
+		private var _maxScale:uint;
+		
+		public function get minScale():uint { return _minScale; }
+		public function get maxScale():uint { return _maxScale; }
+		
+		private var _grid:Dictionary;
+		private var _tileMap:Dictionary;
+		private var focusPoint:Point;
+		private var distCache:Dictionary;
+		
+		//
+		//
+		public function SimulationGrid(scaleX:uint = 10, scaleY:uint = 10) {
+			
+			_scaleX = scaleX;
+			_scaleY = scaleY;
+			
+			_minScale = Math.min(_scaleX, _scaleY);
+			_maxScale = Math.max(_scaleX, _scaleY);
+		
+			init();
+			
+		}
+		
+		//
+		//
+		private function init ():void {
+			
+			_grid = new Dictionary();
+			_tileMap = new Dictionary();
+			
+		}
+		
+		//
+		//
+		public function register (obj:SimulationObject):void {
+					
+			if (obj != null) 
+			{	
+				var tile:Point = new Point();
+				var pt:Vector2d = obj.position;
+				var x:int = Math.floor(pt.x / _scaleX);
+				var y:int = Math.floor(pt.y / _scaleY);
+					
+				var cell:Vector.<SimulationObject> = cellAt(x, y);
+				if (cell.indexOf(obj) == -1) cell.push(obj);
+				
+				tile.x = x;
+				tile.y = y;
+				_tileMap[obj] = tile;	
+			}
+			
+		}
+		
+		//
+		//
+		public function unregister (obj:SimulationObject):void {
+					
+			if (_tileMap[obj] != null) 
+			{
+				var tile:Point = _tileMap[obj];
+				
+				if (tile != null)
+				{
+					var cell:Vector.<SimulationObject> = cellAt(tile.y, tile.y);
+					var idx:int = cell.indexOf(obj);
+					if (idx >= 0) cell.splice(idx, 1);
+					
+					delete _tileMap[obj];
+					_tileMap[obj] = null;
+				}
+			}
+			
+		}
+		
+		//
+		//
+		public function update (obj:SimulationObject):void
+		{
+			if (obj != null)
+			{	
+				var tile:Point = _tileMap[obj];
+				
+				if (tile != null)
+				{
+					var pt:Vector2d = obj.position;
+					var x:int = Math.floor(pt.x / _scaleX);
+				    var y:int = Math.floor(pt.y / _scaleY);
+					
+					if (tile.x != x || tile.y != y)
+					{
+						var cell:Vector.<SimulationObject> = cellAt(tile.y, tile.y);
+						var idx:int = cell.indexOf(obj);
+						if (idx >= 0) cell.splice(idx, 1);
+						
+						cell = cellAt(x, y);
+						cell.push(obj);
+						
+						tile.x = x;
+						tile.y = y;
+					}
+				}
+			}
+		}
+		
+		//
+		//
+		private function cellAt (x:int, y:int):Vector.<SimulationObject> {
+			
+			var id:String = "cell_" + x + "_" + y;
+			
+			if (_grid[id] == null) _grid[id] = new Vector.<SimulationObject>();
+			
+			return _grid[id];
+			
+		}
+		
+		//
+		//
+		public function getNeighborsOf (obj:SimulationObject, distSort:Boolean = true, horizontalDistOnly:Boolean = false, neighbors:Vector.<SimulationObject> = null):Vector.<SimulationObject> {
+			
+			if (neighbors == null) neighbors = new Vector.<SimulationObject>();
+			else while (neighbors.length > 0) neighbors.pop();
+			
+			if (obj != null) {
+				
+				var pt:Vector2d = obj.position;
+				var x:int = Math.floor(pt.x / _scaleX);
+				var y:int = Math.floor(pt.y / _scaleY);
+				
+				var w:int = 1;
+				var h:int = 1;
+				
+				if (obj.objectRef.width > _scaleX * 2) w = 2;
+				if (obj.objectRef.height > _scaleY * 2) h = 2;
+				
+				var ja:int = y - h;
+				var jb:int = y + h;
+				var ia:int = x - w;
+				var ib:int = x + w;
+				
+				for (var j:int = jb; j >= ja; j--)
+				{
+					for (var i:int = ib; i >= ia; i--)
+					{	
+						neighbors = neighbors.concat(cellAt(i, j));
+					}					
+				}				
+
+			}
+			
+			if (neighbors.indexOf(obj) != -1) neighbors.splice(neighbors.indexOf(obj), 1);
+			
+			if (distSort && neighbors.length > 1) 
+			{
+				focusPoint = obj.position;
+				distCache = new Dictionary();
+			
+				if (horizontalDistOnly) neighbors.sort(compareDistHorizontal);
+				else neighbors.sort(compareDist);
+			}
+			
+			focusPoint = null;
+			distCache = null;
+
+			return neighbors;
+			
+		}
+		
+		private function compareDist (a:SimulationObject, b:SimulationObject):Number
+		{
+			if (focusPoint == null) return 0;
+			
+			var dist_a:Number;
+			var dist_b:Number;
+			
+			if (distCache[a] == null) distCache[a] = dist_a = Geom2d.squaredDistanceBetweenPoints(a.position, focusPoint);
+			else dist_a = distCache[a];
+			
+			if (distCache[b] == null) distCache[b] = dist_b = Geom2d.squaredDistanceBetweenPoints(b.position, focusPoint);
+			else dist_b = distCache[b];
+			
+			if (dist_a < dist_b) return -1;
+			else if (dist_a > dist_b) return 1;
+			else return 0;
+		}
+		
+		
+		private function compareDistHorizontal (a:SimulationObject, b:SimulationObject):Number
+		{
+			if (focusPoint == null) return 0;
+			
+			var dist_a:Number;
+			var dist_b:Number;
+			
+			if (distCache[a] == null) distCache[a] = dist_a = Geom2d.horizontalDistanceBetweenPoints(a.position, focusPoint);
+			else dist_a = distCache[a];
+			
+			if (distCache[b] == null) distCache[b] = dist_b = Geom2d.horizontalDistanceBetweenPoints(b.position, focusPoint);
+			else dist_b = distCache[b];
+			
+			if (dist_a < dist_b) return -1;
+			else if (dist_a > dist_b) return 1;
+			else return 0;
+		}
+		
+		
+		//
+		//
+		public function getNeighborsNear (pt:Point, distSort:Boolean = true, horizontalDistOnly:Boolean = false, range:int = 1):Vector.<SimulationObject> {
+			
+			var neighbors:Vector.<SimulationObject> = new Vector.<SimulationObject>();
+			
+			var x:int = Math.floor(pt.x / _scaleX);
+			var y:int = Math.floor(pt.y / _scaleY);	
+			
+			var ja:int = y - range;
+			var jb:int = y + range;
+			var ia:int = x - range;
+			var ib:int = x + range;
+			
+			for (var j:int = jb; j >= ja; j--)
+			{	
+				for (var i:int = ib; i >= ia; i--)
+				{	
+					neighbors = neighbors.concat(cellAt(i, j));
+				}						
+			}				
+			
+			if (distSort && neighbors.length > 1) 
+			{
+				focusPoint = pt;
+				distCache = new Dictionary();
+			
+				if (horizontalDistOnly) neighbors.sort(compareDistHorizontal);
+				else neighbors.sort(compareDist);
+			}
+
+			return neighbors;
+			
+		}
+		
+		//
+		//
+		public function getNeighborsAlong (ptA:Point, ptB:Point, distSort:Boolean = true):Array {
+			
+			var neighbors:Array = [];
+			
+			var xA:int = Math.floor(((ptA.x <= ptB.x) ? ptA.x : ptB.x) / _scaleX);
+			var yA:int = Math.floor(((ptA.y <= ptB.y) ? ptA.y : ptB.y) / _scaleY);
+			var xB:int = Math.floor(((ptA.x > ptB.x) ? ptA.x : ptB.x) / _scaleX);
+			var yB:int = Math.floor(((ptA.y > ptB.y) ? ptA.y : ptB.y) / _scaleY);	
+			
+			for (var j:int = yB + 1; j >= yA - 1; j--) {
+					
+				for (var i:int = xB + 1; i >= xA - 1; i--) {
+						
+					neighbors = neighbors.concat(cellAt(i, j));
+					
+				}					
+				
+			}				
+			
+			if (distSort && neighbors.length > 1) 
+			{
+				focusPoint = ptA;
+				distCache = new Dictionary();
+			
+				neighbors.sort(compareDist);
+			}
+			
+			return neighbors;
+			
+		}
+		
+		public function end ():void {
+			
+			_grid = null;
+			_tileMap = null;
+			
+		}
+		
+	}
+	
+}

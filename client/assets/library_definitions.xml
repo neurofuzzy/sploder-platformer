@@ -1,0 +1,1907 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	
+	<playobj id="floor" map="1" cid="3" ctype="block" cname="Floor">
+		<obj type="symbol" symbolname="floor" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="pipe" map="1" cid="4" ctype="block" cname="Pipe">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+	</playobj>
+
+	<playobj id="stonewall" map="1" cid="5" ctype="block" cname="Tile" calt="You can change a tile block texture by clicking the arrows below">
+		<obj type="tile" tile="119" castshadow="1" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.9" ></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="ramp" cid="6" ctype="block" cname="RampTile">
+		<obj type="tile" tile="119" stamp="rampstamp" castshadow="1" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.9"></material>
+		<simobj type="sim" ct="RAMP" rt="BOUNCE"></simobj>
+	</playobj>
+
+	<playobj id="ramp" cid="7" ctype="block" cname="RampTile">
+		<obj type="tile" tile="119" stamp="rampstamp" castshadow="1" receiveshadow="0" z="10" r="-90"></obj>
+		<material cor="0.5" cof="0.9"></material>
+		<simobj type="sim" ct="RAMP" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="ramp" cid="456" ctype="block" cname="RampTile">
+		<obj type="tile" tile="119" stamp="rampstamp" castshadow="1" receiveshadow="0" z="10" r="90"></obj>
+		<material cor="0.5" cof="0.9"></material>
+		<simobj type="sim" ct="RAMP" rt="BOUNCE"></simobj>
+	</playobj>
+
+	<playobj id="ramp" cid="457" ctype="block" cname="RampTile">
+		<obj type="tile" tile="119" stamp="rampstamp" castshadow="1" receiveshadow="0" z="10" r="180"></obj>
+		<material cor="0.5" cof="0.9"></material>
+		<simobj type="sim" ct="RAMP" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="stair" cid="8" ctype="block" cname="StairTile">
+		<obj type="tile" tile="119" stamp="stairstamp" castshadow="1" receiveshadow="0" z="10"></obj>
+		<simobj type="sim" ct="STAIR" rt="BOUNCE"></simobj>
+	</playobj>
+
+	<playobj id="stair" cid="9" ctype="block" cname="StairTile">
+		<obj type="tile" tile="119" stamp="stairstamp" castshadow="1" receiveshadow="0" z="10" r="-90"></obj>
+		<simobj type="sim" ct="STAIR" rt="BOUNCE"></simobj>
+	</playobj>
+
+	<playobj id="stonewall_large" version="2" map="1" cid="90" ctype="block" cname="Large Tile" calt="You can change a tile block texture by clicking the arrows below">
+		<obj type="tile" tile="119" castshadow="1" tilescale="2" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.9" ></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="textureblock_large" version="2" map="1" cid="800" ctype="block" cname="TextureBlock" calt="You can change a tile block texture by clicking the button below">
+		<obj type="textureblock" tile="0" castshadow="1" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.9" ></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="bricka2x1" version="2" map="1" cid="401" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="bricka2x2" version="2" map="1" cid="402" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="bricka3x1" version="2" map="1" cid="403" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickb2x2a" version="2" map="1" cid="404" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickb2x2b" version="2" map="1" cid="405" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickb2x2c" version="2" map="1" cid="406" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickc2x1" version="2" map="1" cid="407" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="0" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickc2x2a" version="2" map="1" cid="408" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickc2x2b" version="2" map="1" cid="409" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickc3x1" version="2" map="1" cid="410" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="0" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickd2x1" version="2" map="1" cid="411" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickd2x2" version="2" map="1" cid="412" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="brickd3x1" version="2" map="1" cid="413" ctype="block" cname="Brick">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="woodpost" version="2" map="1" cid="289" ctype="block" cname="WoodPost">
+		<obj type="symbol" castshadow="1" receiveshadow="0" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="highwall" cid="10" ctype="blockbehind" cname="BackWall" calt="You can walk in front of back walls and windows">
+		<obj type="tile" tile="119" back="1" castshadow="0" z="-10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+	</playobj>
+	
+	<playobj id="highwall_windowtriangle" cid="11" ctype="blockbehind" cname="BackWindow">
+		<obj type="tile" tile="119" back="1" stamp="windowtrianglestamp" castshadow="0" z="-10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+	</playobj>
+	
+	<playobj id="highwall_windowcircle" cid="12" ctype="blockbehind" cname="BackWindow">
+		<obj type="tile" tile="119" back="1" stamp="windowcirclestamp" castshadow="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="wall" cid="13" ctype="blockbehind" cname="BackWall" calt="You can walk in front of back walls and windows">
+		<obj type="tile" tile="131" back="1" castshadow="0" z="-10">{"perturbation": "0"}</obj>
+	</playobj>
+	
+	<playobj id="highwall_large" version="2" cid="91" ctype="blockbehind" cname="LargeBack" calt="You can walk in front of back walls and windows">
+		<obj type="tile" tile="119" back="1" tilescale="2" castshadow="0" z="-10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+	</playobj>
+	
+	<playobj id="texturewall_large" version="2" cid="801" ctype="blockbehind" cname="TextureWall" calt="You can change a tile wall texture by clicking the button below">
+		<obj type="textureblock" tile="0" back="1" castshadow="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="highwall_windowcircle_large" version="2" cid="92" ctype="blockbehind" cname="LargeWindow">
+		<obj type="tile" tile="119" back="1" stamp="windowarchstamp" tilescale="2" castshadow="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="backwalltemple" version="2" cid="117" ctype="blockbehind" cname="BackWall" calt="You can walk in front of back walls and windows">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="wall_light" cid="14" ctype="blockbehind" cname="BackLight" calt="Use this light to illuminate dark areas">
+		<obj type="symbol" symbolname="wall_light" light="0xcccccc" cache="1" z="-9"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="nearlight" cid="48" ctype="blockbehind" cname="NearLight" calt="This light turns on when you are near it">
+		<obj type="symbol" light="0xcccccc" z="-9"></obj>
+		<material></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="light" method="cpu"></ctrl>
+	</playobj>
+	
+	<playobj id="torchlight" version="2" cid="115" ctype="blockbehind" ccache="1" cname="TorchLight" calt="Use this light to illuminate dark areas">
+		<obj type="symbol" light="0xff6600" z="-9"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="tikitorch" version="2" cid="116" ctype="blockbehind" ccache="1" cname="TikiTorch" calt="Use this light to illuminate dark areas">
+		<obj type="symbol" light="0xff6600" z="-9"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="brickabehind" version="2" cid="501" ctype="blockbehind" cname="BackBrick">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="brickbbehind" version="2" cid="502" ctype="blockbehind" cname="BackBrick">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="brickcbehind" version="2" cid="503" ctype="blockbehind" cname="BackBrick">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="brickdbehind" version="2" cid="504" ctype="blockbehind" cname="BackBrick">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall1" cid="22" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall2" cid="23" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall3" cid="24" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall4" cid="25" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall5" cid="26" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall6" cid="27" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall7" cid="28" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall8" cid="29" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall9" cid="30" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall10" cid="31" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall11" cid="32" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="lamwall12" cid="33" ctype="blockbehind" cname="LamWall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelrosetta" version="2" cid="69" ctype="blockbehind" cname="GoldPanel">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelcluster" version="2" cid="70" ctype="blockbehind" cname="GoldPanel">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelglitterred" version="2" cid="71" ctype="blockbehind" ccache="1" cname="CyberPanel">
+		<obj type="symbol" cache="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelglitterpurple" version="2" cid="72" ctype="blockbehind" ccache="1" cname="CyberPanel">
+		<obj type="symbol" cache="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelspines" version="2" cid="73" ctype="blockbehind" ccache="1" cname="Wire Wall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelspinesglow" version="2" cid="74" ctype="blockbehind" ccache="1" cname="HotWire Wall">
+		<obj type="symbol" cache="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelscallops" version="2" cid="75" ctype="blockbehind" ccache="1" cname="Angular Wall">
+		<obj type="symbol" cache="1" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelmesa" version="2" cid="76" ctype="blockbehind" ccache="1" cname="Rainbow Wall">
+		<obj type="symbol" cache="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="panelbubbles" version="2" cid="77" ctype="blockbehind" ccache="1" cname="Aqua Wall">
+		<obj type="symbol" cache="0" z="-10"></obj>
+	</playobj>
+	
+	<playobj id="techwall" cid="34" ctype="blockbehind" cname="TechWall" cframe="50">
+		<obj type="symbol" cache="1" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="techwallscreen" cid="35" ctype="blockbehind" cname="TechWall" cframe="50">
+		<obj type="symbol" cache="1" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="ledwall1" cid="36" ctype="blockbehind" ccache="1" cname="LEDWall" cframe="50">
+		<obj type="symbol" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="ledwall2" cid="37" ctype="blockbehind" ccache="1" cname="LEDWall" cframe="50">
+		<obj type="symbol" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="ledwall3" cid="38" ctype="blockbehind" ccache="1" cname="LEDWall" cframe="50">
+		<obj type="symbol" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="ledwall4" cid="39" ctype="blockbehind" ccache="1" cname="LEDWall" cframe="50">
+		<obj type="symbol" z="-10"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<!-- ******************** -->	
+	
+	<!-- SAGES -->
+	<!-- ******************** -->
+		
+	<playobj id="inscription" version="2" type="control" cid="288" ctype="blockbehind" textentry="true" cname="Inscription" calt="This block can display a message of your choosing">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5"></material>
+		<ctrl type="speech" method="cpu"></ctrl>
+	</playobj>
+	
+	<playobj id="sagewizard" version="2" type="control" cid="351" ctype="blockbehind" textentry="true" cname="Wizard" calt="This character can speak a message of your choosing">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="speech" method="cpu"></ctrl>
+		<sounds speak="aa_mumble"></sounds>
+	</playobj>
+	
+	<playobj id="sagegeneral" version="2" type="control" cid="352" ctype="blockbehind" textentry="true" cname="General" calt="This character can speak a message of your choosing">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="speech" method="cpu"></ctrl>
+		<sounds speak="aa_mumble"></sounds>
+	</playobj>
+	
+	<playobj id="sageowl" version="2" type="control" cid="353" ctype="blockbehind" textentry="true" cname="Owl" calt="This character can speak a message of your choosing">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="speech" method="cpu"></ctrl>
+		<sounds speak="aa_mumble"></sounds>
+	</playobj>
+	
+	<!-- ******************** -->	
+	
+	<playobj id="bush" version="2" cid="601" ctype="blockbehind" cname="FrontPlant">
+		<obj type="symbol" cache="1" z="910"></obj>
+	</playobj>
+	
+	<playobj id="bushbehind" version="2" cid="602" ctype="blockbehind" cname="Plant">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="bushthin" version="2" cid="603" ctype="blockbehind" cname="FrontPlant">
+		<obj type="symbol" cache="1" z="910"></obj>
+	</playobj>
+	
+	<playobj id="grass" version="2" cid="604" ctype="blockbehind" cname="FrontGrass">
+		<obj type="symbol" cache="1" z="910"></obj>
+	</playobj>
+	
+	<playobj id="grassbehind" version="2" cid="605" ctype="blockbehind" cname="Grass">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="woodpostback" version="2" cid="618" ctype="blockbehind" cname="WoodPostBehind">
+		<obj type="symbol" z="-7"></obj>
+	</playobj>
+	
+	<playobj id="etchingdemona" version="2" cid="606" ctype="blockbehind" cname="Etching">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="etchingdemonb" version="2" cid="607" ctype="blockbehind" cname="Etching">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="statue1" cid="40" ctype="blockbehind" cname="Statue">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="statue2" cid="41" ctype="blockbehind" cname="Statue">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="statue3" cid="42" ctype="blockbehind" cname="Statue">
+		<obj type="symbol" cache="1" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="oni" version="2" cid="608" ctype="blockbehind" cname="FrontStatue">
+		<obj type="symbol" cache="1" z="900"></obj>
+	</playobj>
+	
+	<playobj id="sign1" cid="43" ctype="blockbehind" ccache="1" cname="Sign">
+		<obj type="symbol" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="sign2" cid="44" ctype="blockbehind" ccache="1" cname="Sign">
+		<obj type="symbol" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="sign3" cid="45" ctype="blockbehind" ccache="1" cname="Sign">
+		<obj type="symbol" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="sign4" cid="46" ctype="blockbehind" ccache="1" cname="Sign">
+		<obj type="symbol" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="rocky1" version="2" cid="78" ctype="blockbehind" cname="Rock Pile">
+		<obj type="symbol" cache="1" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="rocky2" version="2" cid="79" ctype="blockbehind" cname="Rock Pile">
+		<obj type="symbol" cache="1" z="-9"></obj>
+	</playobj>
+	
+	<playobj id="screen" version="2" cid="609" ctype="blockbehind" cname="FrontScreen">
+		<obj type="symbol" cache="1" z="910"></obj>
+	</playobj>
+	
+	<playobj id="skulls" version="2" cid="610" ctype="blockbehind" cname="Skulls">
+		<obj type="symbol" cache="1" z="-6"></obj>
+	</playobj>
+	
+	<playobj id="spiderweb" version="2" cid="611" ctype="blockbehind" cname="SpiderWeb">
+		<obj type="symbol" cache="1" z="-5"></obj>
+	</playobj>
+	
+	<playobj id="spiderweb_mirror" version="2" cid="617" ctype="blockbehind" cname="SpiderWeb">
+		<obj type="symbol" cache="1" z="-5"></obj>
+	</playobj>
+	
+	<playobj id="stainedglasswindow" version="2" cid="612" ctype="blockbehind" cname="Window">
+		<obj type="symbol" cache="1" z="-7"></obj>
+		<material self_illuminate="1"></material>
+	</playobj>
+	
+	<playobj id="truss" version="2" cid="613" rotate="true" ctype="blockbehind" cname="Truss">
+		<obj type="symbol" cache="1" z="1001"></obj>
+	</playobj>
+	
+	<playobj id="waterspoutfront" version="2" cid="614" ctype="blockbehind" ccache="1" cname="Waterspout">
+		<obj type="symbol" z="-8"></obj>
+	</playobj>
+	
+	<playobj id="waterspoutside" version="2" cid="615" ctype="blockbehind" ccache="1" cname="Waterspout">
+		<obj type="symbol" z="-7"></obj>
+	</playobj>
+	
+	<playobj id="waterspoutside_mirror" version="2" cid="616" ctype="blockbehind" ccache="1" cname="Waterspout">
+		<obj type="symbol" z="-7"></obj>
+	</playobj>
+	
+	<playobj id="water" cid="15" ctype="block" cname="Water" calt="Use these to create areas you can float in">
+		<material emissivity="0x0000cc"></material>
+		<obj type="symbol" symbolname="water" z="180"></obj>
+		<simobj type="sim" ct="OBB" rt="FLOAT"></simobj>
+	</playobj>
+	
+	<playobj id="waterlarge" version="2" cid="68" ctype="block" cname="Large Water" calt="A larger block of water to make large areas faster">
+		<material emissivity="0x0000cc"></material>
+		<obj type="symbol" symbolname="waterlarge" z="180"></obj>
+		<simobj type="sim" ct="OBB" rt="FLOAT"></simobj>
+	</playobj>
+	
+	<playobj id="waterwaves" cid="16" ctype="block" ccache="1" cname="WaterTop" calt="Put these on top of your water pools">
+		<material emissivity="0x0000cc"></material>
+		<obj type="symbol" symbolname="waterwaves" z="180"></obj>
+		<simobj type="sim" ct="OBB" rt="FLOAT"></simobj>
+	</playobj>
+	
+	<playobj id="lava" version="2" cid="451" ctype="block" ccache="1" cname="Lava" calt="Deadly lava kills almost instantly!">
+		<material emissivity="0xff0000"></material>
+		<obj type="symbol" z="180"></obj>
+		<simobj type="sim" ct="OBB" rt="FLOAT"></simobj>
+		<ctrl type="harmtouch" method="cpu" strength="1" effect="burneffect"></ctrl>
+	</playobj>
+	
+	<playobj id="lavawaves" version="2" cid="452" ctype="block" ccache="1" cname="LavaTop" calt="Put these on top of your lava pools">
+		<material emissivity="0xff0000"></material>
+		<obj type="symbol" z="180"></obj>
+		<simobj type="sim" ct="OBB" rt="FLOAT"></simobj>
+		<ctrl type="harmtouch" method="cpu" strength="10" effect="burneffect"></ctrl>
+		<sounds collide="aa_lava"></sounds>
+	</playobj>
+	
+	<playobj id="ladder" version="2" cid="49" ctype="block" cname="Ladder" calt="Use these to create paths you can climb up and down">
+		<obj type="symbol" symbolname="ladder" z="-8"></obj>
+		<simobj type="sim" ct="OBB" rt="CLIMB"></simobj>
+	</playobj>
+	
+	<playobj id="log" type="control" map="1" cid="17" ctype="block" cname="Log" calt="These logs are bouncy and are hard to walk on">
+		<obj type="symbol" symbolname="log" z="10"></obj>
+		<material cor="0.1" cof="0.8"></material>
+		<simobj type="vel" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="spring" method="cpu" k="8" lockx="1"></ctrl>
+	</playobj>
+	
+	<playobj id="bounceblock" type="control" map="1" cid="18" ctype="block" cname="Bouncer">
+		<obj type="symbol" symbolname="bounceblock" z="10"></obj>
+		<material cor="0.1" cof="0"></material>
+		<simobj type="vel" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="spring" method="cpu" k="10" bounce="1" lockx="1"></ctrl>
+	</playobj>
+	
+	<playobj id="iceblock" map="1" cid="19" ctype="block" cname="IceBlock" calt="These are slippery and hard to walk on">
+		<obj type="symbol" cache="1" z="10"></obj>
+		<material cor="0.5" cof="0"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="weakfloor" type="control" map="1" cid="20" ctype="block" cname="WeakFloor" calt="This floor will break under your weight">
+		<obj type="symbol" symbolname="weakfloor" receiveshadow="0" z="10"></obj>
+		<material cor="0.6" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="8" damage="weight"></behavior>
+	</playobj>
+	
+	<playobj id="sandblock" type="control" map="1" cid="21" ctype="block" cname="Sandblock" calt="This block is breakable if you hit it">
+		<obj type="symbol" receiveshadow="0" z="10"></obj>
+		<material cor="0.7" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="8" damage="hit"></behavior>
+	</playobj>
+	
+	<playobj id="meltblock" type="control" map="1" cid="47" ctype="block" cname="Meltblock" calt="This block can be melted by the flame thrower.">
+		<obj type="symbol" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="8" damage="heat"></behavior>
+	</playobj>
+	
+	<playobj id="cinderblock" version="2" type="control" map="1" cid="287" ctype="block" cname="Cinderblock" calt="This block is only breakable with the mace.">
+		<obj type="symbol" receiveshadow="0" z="10"></obj>
+		<material cor="0.7" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="4" damage="hit" resilience="29" damageby="mace"></behavior>
+	</playobj>
+	
+	<playobj id="cavein" version="2" type="control" map="1" cid="286" ctype="block" cname="CaveIn" calt="This block can only be destroyed by a grenade.">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.7" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="40" damage="hit" resilience="41" damageby="grenade"></behavior>
+	</playobj>
+	
+	<playobj id="tunnelstraight" version="2" map="0" submap="1" rotate="true" cid="80" ctype="block" cname="Tunnel">
+		<obj type="symbol" z="-12" cache="1" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 149.9, 150], [true, -150, 150], [true, -150, 90], [true, 149.9, 90], [true, 149.9, 150], [false, 150, -90], [true, -149.9, -90], [true, -149.9, -150], [true, 150, -150], [true, 150, -90]]</simobj>
+	</playobj>
+	
+	<playobj id="tunnelcorner" version="2" map="0" submap="1" rotate="true" cid="81" ctype="block" cname="Tunnel Corner">
+		<obj type="symbol" z="-12" cache="1" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 150, 90], [true, 150, 150], [true, -150.15, 150], [true, -150.15, -150], [true, -90.15, -150], [true, -90.15, -76.55], [true, -40, 40], [true, 66.55, 90], [true, 150, 90], [false, 150, -150], [true, 150, -90], [true, 109.95, -100], [true, 89.95, -150], [true, 150, -150]]</simobj>
+	</playobj>
+	
+	<playobj id="tunneljunction3" version="2" map="0" submap="1" rotate="true" cid="82" ctype="block" cname="Tunnel Junction">
+		<obj type="symbol" z="-12" cache="1" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, -150, 150.05], [true, -150, 90.05], [true, -110, 110.05], [true, -90, 150.05], [true, -150, 150.05], [false, 90, 150.05], [true, 110, 110.05], [true, 150, 90.05], [true, 150, 150.05], [true, 90, 150.05], [false, 150, -90], [true, -149.9, -90], [true, -149.9, -150], [true, 150, -150], [true, 150, -90]]</simobj>
+	</playobj>
+	
+	<playobj id="tunneljunction4" version="2" map="0" submap="1" rotate="true" cid="83" ctype="block" cname="Tunnel Junction">
+		<obj type="symbol" z="-12" cache="1" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[
+		[false, -90, 150], [true, -150, 150], [true, -150, 90], [true, -110, 110], [true, -90, 150], 
+		[false, -90, -150], [true, -110, -110], [true, -150, -90], [true, -150, -150], [true, -90, -150], 
+		[false, 90, 150], [true, 110, 110], [true, 150, 90], [true, 150, 150], [true, 90, 150], 
+		[false, 150, -150], [true, 150, -90], [true, 110, -110], [true, 90, -150], [true, 150, -150]]
+		</simobj>
+	</playobj>
+	
+	<playobj id="tunnelend" version="2" map="0" submap="1" buttress="1" rotate="true" cid="84" ctype="block" cname="Tunnel End">
+		<obj type="symbol" z="-12" cache="1" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 150, -150], [true, 150, 150], [true, -150, 150], [true, -150, -150], [true, -90, -150], [true, -90, 90], [true, 90, 90], [true, 90, -150], [true, 150, -150]]</simobj>
+	</playobj>
+	
+	<playobj id="tunnelstraight_jewel" version="2" map="0" submap="1" rotate="true" cid="85" ctype="block" cname="Tunnel">
+		<obj type="symbol" z="-12" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 149.9, 150], [true, -150, 150], [true, -150, 90], [true, 149.9, 90], [true, 149.9, 150], [false, 150, -90], [true, -149.9, -90], [true, -149.9, -150], [true, 150, -150], [true, 150, -90]]</simobj>
+	</playobj>
+	
+	<playobj id="tunnelcorner_jewel" version="2" map="0" submap="1" rotate="true" cid="86" ctype="block" cname="Tunnel Corner">
+		<obj type="symbol" z="-12" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 150, 90], [true, 150, 150], [true, -150.15, 150], [true, -150.15, -150], [true, -90.15, -150], [true, -90.15, -76.55], [true, -40, 40], [true, 66.55, 90], [true, 150, 90], [false, 150, -150], [true, 150, -90], [true, 109.95, -100], [true, 89.95, -150], [true, 150, -150]]</simobj>
+	</playobj>
+	
+	<playobj id="tunneljunction3_jewel" version="2" map="0" submap="1" rotate="true" cid="87" ctype="block" cname="Tunnel Junction">
+		<obj type="symbol" z="-12" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, -150, 150.05], [true, -150, 90.05], [true, -110, 110.05], [true, -90, 150.05], [true, -150, 150.05], [false, 90, 150.05], [true, 110, 110.05], [true, 150, 90.05], [true, 150, 150.05], [true, 90, 150.05], [false, 150, -90], [true, -149.9, -90], [true, -149.9, -150], [true, 150, -150], [true, 150, -90]]</simobj>
+	</playobj>
+	
+	<playobj id="tunneljunction4_jewel" version="2" map="0" submap="1" rotate="true" cid="88" ctype="block" cname="Tunnel Junction">
+		<obj type="symbol" z="-12" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[
+		[false, -90, 150], [true, -150, 150], [true, -150, 90], [true, -110, 110], [true, -90, 150], 
+		[false, -90, -150], [true, -110, -110], [true, -150, -90], [true, -150, -150], [true, -90, -150], 
+		[false, 90, 150], [true, 110, 110], [true, 150, 90], [true, 150, 150], [true, 90, 150], 
+		[false, 150, -150], [true, 150, -90], [true, 110, -110], [true, 90, -150], [true, 150, -150]]</simobj>
+	</playobj>
+	
+	<playobj id="tunnelend_jewel" version="2" map="0" submap="1" buttress="1" rotate="true" cid="89" ctype="block" cname="Tunnel End">
+		<obj type="symbol" z="-12" overlay="1"></obj>
+		<material cor="0.5" cof="0.5" emissivity="0x999999"></material>
+		<simobj type="sim" ct="POLYGON" rt="BOUNCE">[[false, 150, -150], [true, 150, 150], [true, -150, 150], [true, -150, -150], [true, -90, -150], [true, -90, 90], [true, 90, 90], [true, 90, -150], [true, 150, -150]]</simobj>
+		</playobj>	
+	
+	<playobj id="teleportergreen" type="control" map="1" cid="61" ctype="block" cname="Teleporter" calt="Teleports you to the nearest green teleporter">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5" self_illuminate="1"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="teleporter" group="green"></ctrl>
+	</playobj>
+	
+	<playobj id="teleporterorange" type="control" map="1" cid="62" ctype="block" cname="Teleporter" calt="This block will teleport you to the nearest orange teleporter">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5" self_illuminate="1"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="teleporter" group="orange"></ctrl>
+	</playobj>
+	
+	<playobj id="teleporterpurple" type="control" map="1" cid="63" ctype="block" cname="Teleporter" calt="This block will teleport you to the nearest purple teleporter">
+		<obj type="symbol" receiveshadow="0" z="9"></obj>
+		<material cor="0.2" cof="0.5" self_illuminate="1"></material>
+		<simobj type="sim" ct="OBB" rt="REPORT_ONLY"></simobj>
+		<ctrl type="teleporter" group="purple"></ctrl>
+	</playobj>
+	
+	<playobj id="platform" type="control" map="1" cid="50" ctype="block" cname="Slider" calt="Moves right to left.  Add other blocks nearby to stop it">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.1"></material>
+		<simobj type="vel" ct="CAPSULE" rt="BOUNCE" pen="15"></simobj>
+		<ctrl type="platform" method="cpu" vx="30" vy="0"></ctrl>
+	</playobj>
+	
+	<playobj id="elevator" type="control" map="1" cid="51" ctype="block" cname="Elevator" calt="Moves up and down. Add other blocks above and below to stop it">
+		<obj type="symbol" symbolname="platform" z="10"></obj>
+		<material cor="0.5" cof="0.1"></material>
+		<simobj type="vel" ct="CAPSULE" rt="BOUNCE" pen="15"></simobj>
+		<ctrl type="platform" method="cpu" vx="0" vy="30"></ctrl>
+	</playobj>
+	
+	<playobj id="elevator2" version="2" type="control" map="1" cid="218" ctype="block" cname="Big Elevator" calt="Moves up and down. Add other blocks above and below to stop it">
+		<obj type="symbol" symbolname="platform3" z="10"></obj>
+		<material cor="0.5" cof="0.1"></material>
+		<simobj type="vel" ct="OBB" rt="BOUNCE" pen="15"></simobj>
+		<ctrl type="platform" method="cpu" vx="0" vy="20"></ctrl>
+	</playobj>
+	
+	<playobj id="platavator" version="2" type="control" map="1" cid="219" ctype="block" cname="2way Platform" calt="Moves in 4 directions. Add other blocks around it to change its direction">
+		<obj type="symbol" symbolname="platform2" z="10"></obj>
+		<material cor="0.5" cof="0.1"></material>
+		<simobj type="vel" ct="OBB" rt="BOUNCE" pen="15"></simobj>
+		<ctrl type="platform" method="cpu" vx="20" vy="20"></ctrl>
+	</playobj>
+	
+	<playobj id="gear" map="1" cid="52" ctype="block" cname="Dynamo">
+		<obj type="symbol" symbolname="gear" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="POLYGON2" rt="BOUNCE">[[false, 23.05, -87.25], [true, 53.85, -140.65], [true, 94.85, -117], [true, 63.95, -63.45], [true, 81.3, -45.95, 87.1, -23.65], [true, 58.8, -23.65], [true, 58.8, 23.7], [true, 87.1, 23.7], [true, 81.25, 45.9, 63.95, 63.4], [true, 114.95, 147], [true, 73.95, 170.7], [true, 23.05, 87.2], [true, 12.1, 90, 0, 90], [true, -12.1, 90, -23.05, 87.2], [true, -53.9, 140.7], [true, -94.95, 117.05], [true, -63.95, 63.4], [true, -81.25, 45.95, -87.05, 23.7], [true, -58.75, 23.7], [true, -58.75, -23.65], [true, -87.05, -23.65], [true, -81.3, -46, -63.9, -63.45], [true, -94.85, -117], [true, -53.85, -140.7], [true, -23, -87.25], [true, -12.1, -90.05, 0, -90], [true, 12.1, -90.05, 23.05, -87.25]]</simobj>
+		<ctrl type="spin" method="cpu" dir="1"></ctrl>
+	</playobj>
+	
+	<playobj id="pushbox" type="control" map="1" cid="64" ctype="block" cname="Crate" calt="You can push this crate around to help you climb">
+		<obj type="symbol" symbolname="pushbox" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="vel" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="push" locky="1"></ctrl>
+	</playobj>
+	
+	<playobj id="windmill" map="1" cid="53" ctype="block" cname="Windmill" calt="Turns clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="POLYGON2" rt="BOUNCE">[[false, 24, -124], [true, -24, -124], [true, -24, -24], [true, -124, -24], [true, -124, 24], [true, -24, 24], [true, -24, 124], [true, 24, 124], [true, 24, 24], [true, 124, 24], [true, 124, -24], [true, 24, -24], [true, 24, -124]]</simobj>
+		<ctrl type="spin" method="cpu" dir="1"></ctrl>
+	</playobj>
+	
+	<playobj id="windmill2" map="1" cid="54" ctype="block" cname="Windmill" calt="Turns counter-clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="POLYGON2" rt="BOUNCE">[[false, 24, -124], [true, -24, -124], [true, -24, -24], [true, -124, -24], [true, -124, 24], [true, -24, 24], [true, -24, 124], [true, 24, 124], [true, 24, 24], [true, 124, 24], [true, 124, -24], [true, 24, -24], [true, 24, -124]]</simobj>
+		<ctrl type="spin" method="cpu" dir="-1"></ctrl>
+	</playobj>	
+	
+	<playobj id="cog" map="1" cid="55" ctype="block" cname="Gear" calt="Turns clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="spin" method="cpu" dir="2"></ctrl>
+	</playobj>
+	
+	<playobj id="cog2" map="1" cid="56" ctype="block" cname="Gear" calt="Turns counter-clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="spin" method="cpu" dir="-2"></ctrl>
+	</playobj>
+	
+	<playobj id="coglarge" map="1" cid="57" ctype="block" cname="BigGear" calt="Turns clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="spin" method="cpu" dir="2"></ctrl>
+	</playobj>
+	
+	<playobj id="coglarge2" map="1" cid="58" ctype="block" cname="BigGear" calt="Turns counter-clockwise and pushes you">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="spin" method="cpu" dir="-2"></ctrl>
+	</playobj>
+	
+	<playobj id="rod" map="1" cid="59" ctype="block" cname="Rod" calt="Rotates on contact">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.1"></material>
+		<simobj type="sim" ct="POLYGON2" rt="BOUNCE">[[false, 150.1, -8], [true, 150.1, 8], [true, 130.1, 19.7], [true, -130.1, 19.7], [true, -150.1, 8], [true, -150.1, -8], [true, -130.1, -19.6], [true, 130.1, -19.6], [true, 150.1, -8]]</simobj>
+		<ctrl type="spin" method="cpu" dir="1" freespin="1"></ctrl>
+	</playobj>
+	
+	<playobj id="triangle" map="1" cid="60" ctype="block" cname="TriGear" calt="Rotates on contact">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.2"></material>
+		<simobj type="sim" ct="POLYGON2" rt="BOUNCE">[[false, 8.9, -92.9], [true, -92.9, 8.9], [true, -84.85, 35.95], [true, 51.75, 72.55], [true, 72.45, 51.55], [true, 36.05, -84.4], [true, 8.9, -92.9]]</simobj>
+		<ctrl type="spin" method="cpu" dir="1" freespin="1"></ctrl>
+	</playobj>
+	
+	<!-- ******************** -->	
+	
+	<!-- CHARACTERS -->
+	<!-- ******************** -->	
+		
+	<playobj id="player" group="good" type="biped" jump="350" health="200" cid="1" ctype="player" cname="Player">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="player" creatorsymbolname="player_creator" skeleton="simple_skeleton" z="205"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0" nosleep="1"></simobj>
+		<ctrl type="bipedobj" method="kbd"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" sound="1" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds harm="boy3,ouch6" defend="boy2" die="die1" attackstrong="aa_boy_yah" rightstep="step1" leftstep="step2" rightrun="aa_run1" leftrun="aa_run2,step2" switchfeet="aa_switchfeet" startjump="aa_switchfeet" stomp="aa_stomp" doublejump="aa_doublejump,aa_doublejump,aa_boy_hee" rebirth="aa_hallelujah" whip="aa_whip" strike_middle="boy4,none" strike_high="boy1,none" fall="punch2" hard_landing="boy2" strike_middle_hit="slash2,slash3,slash4" strike_high_hit="slash1,slash5,slash6" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3" bash_middle_hit="aa_bash_metal" bash_low_hit="aa_bash_metal" bash_high_hit="aa_bash_metal"></sounds>
+	</playobj>
+		
+	<playobj id="bat" group="evil" type="movable" jump="700" health="10" speed="1" strength="1" global="1" cid="300" ctype="hazard" cname="VampireBat" calt="Flying enemy with a venomous bite">
+		<obj type="symbol" symbolname="bat" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.25" damp="1" g="0" rdamp="0.8"></simobj>
+		<ctrl type="flyingenemy" method="cpu" range="0" aggression="100" bank="1" speed="3"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds random="bat1" collide="bite1"></sounds>
+	</playobj>
+	
+	<playobj id="ninja" group="evil" type="biped" jump="400" health="40" speed="1.2" strength="1" global="1" cid="301" ctype="hazard" cname="NinjaBoy" calt="Small enemy with mad skillz">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="ninja" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="190"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="yell1" die="die2" jump="highgrunt1,yell1" fall="punch2" strike_middle_hit="slash2,slash3,slash4" strike_high_hit="slash1,slash5,slash6" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="brute" group="evil" type="biped" jump="700" health="70" speed="1" strength="1" global="1" cid="302" ctype="hazard" cname="Thug" calt="Medium sized enemy with a big machete">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="brute" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5" color="0xffffff"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds die="die2,ouch3" fall="punch2" recover="aa_dizzy_recover" harm="ouch2,ouch5" strike_middle_hit="slash2,slash3,slash4" strike_high_hit="slash1,slash5,slash6" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="gator" group="evil" type="biped" jump="700" health="100" speed="0.75" strength="1" global="1" cid="303" ctype="hazard" cname="Snarley" calt="Large enemy with very bad breath">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="gator" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="190"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="growl1,lizard2" die="roar2,roar3" jump="lizard4" harm="lizard1,lizard3" fall="punch2"></sounds>
+	</playobj>
+	
+	<playobj id="bull" group="evil" type="biped" jump="500" health="100" speed="0.5" strength="1" global="1" cid="304" ctype="hazard" cname="Thor" calt="Large enemy with a deadly mallot">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="bull" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="60"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="grunt2" die="groan1" recover="aa_dizzy_recover" jump="grunt1,none" harm="growl3" fall="punch2" strike_middle_hit="slash1,slash5,slash6" strike_high_hit="slash1,slash5,slash6" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="ape" group="evil" type="biped" jump="1500" health="180" speed="3" strength="1" global="1" cid="305" ctype="hazard" cname="George" calt="Large enemy with a strong punch">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="ape" skeleton="skeleton_longhand" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="60"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="grunt2" die="groan1" jump="grunt1,none" harm="growl3" fall="punch2" punch_middle_hit="punch4,punch5" punch_high_hit="punch4,punch5"></sounds>
+	</playobj>	
+	
+	<playobj id="archer" group="evil" type="biped" jump="1500" health="80" speed="3" strength="1" global="1" cid="306" ctype="hazard" cname="Archie" calt="Small Enemy with bow and arrow">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="archer" skeleton="skeleton_longhand" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="1000"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="halt1" die="die2" jump="grunt4,none" harm="grunt3" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="samurai" group="evil" type="biped" jump="1500" health="200" speed="6" strength="1" global="1" cid="308" ctype="hazard" cname="Kikuchiyo" calt="Large samurai warrior">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="samurai" skeleton="skeleton_longhand" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.25" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="0"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="halt1" die="die2" jump="grunt4,none" harm="grunt3" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="mongol" group="evil" type="biped" jump="1500" health="50" speed="10" strength="1" global="1" cid="309" ctype="hazard" cname="Mongol" calt="Small Enemy with great speed">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="mongol" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.8" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="0"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="halt1" die="die2" recover="aa_dizzy_recover" jump="grunt4,none" harm="grunt3" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="skell" group="evil" type="biped" jump="1200" health="50" speed="5" strength="1" global="1" cid="349" ctype="hazard" cname="Skelly" calt="Small Enemy with great speed">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="skell" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.8" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="0"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_skell_yah,aa_skell_hah" die="die2" recover="aa_dizzy_recover" jump="aa_skell_ow,none" harm="aa_skell_doh" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="firetroll" group="evil" type="biped" jump="1500" health="250" speed="3" strength="1" global="1" cid="310" ctype="hazard" cname="FireTroll" calt="Large enemy with a giant cannon">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="firetroll" skeleton="skeleton_longhand" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="400"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="grunt2" die="groan1" jump="grunt1,none" harm="growl3" fall="punch2" strike_middle_hit="slash1,slash5,slash6" strike_high_hit="slash1,slash5,slash6" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>	
+	
+	<playobj id="probe" group="evil" type="movable" health="20" speed="1" strength="1" global="1" cid="307" ctype="hazard" cname="Probe" calt="Flying robotic enemy with a deadly laser.">
+		<obj type="symbol" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.5" damp="0.9" g="0.01" rdamp="0.8"></simobj>
+		<ctrl type="flyingenemyprobe" method="cpu" range="300" aggression="100" fire="laser" firedelay="250" firepower="100" bank="1" speed="3"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="death" style="shatter" radius="20" prio="5"></behavior>
+		<sounds></sounds>
+	</playobj>
+	
+	<playobj id="turret" version="2" group="evil" type="control" health="10" map="1" rotate="true" speed="1" strength="1" cid="311" ctype="hazard" cname="Turret" calt="Stationary enemy with a deadly laser.">
+		<obj type="turretsymbol" symbolname="gunbot" z="100"></obj>
+		<material cor="0.5" cof="0.5" color="0x666666"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="death" style="shatter" radius="20" prio="5"></behavior>
+		<ctrl type="turretenemy" method="cpu" range="500" aggression="100" fire="laser" firedelay="300" firepower="100" speed="1"></ctrl>
+		<sounds die="aa_small_shatter"></sounds>
+	</playobj>
+	
+	<playobj id="enemymech" version="2" group="evil" cid="313" ctype="hazard" cname="EnemyMech" type="movable" global="1" health="250" calt="The enemy mech gives a powerful punch!">
+		<obj type="mech" symbolname="enemymech" z="10"></obj>
+		<material cor="0.5" cof="0.9" color="0xff0000"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="2" damp="0.15" rdamp="0" buoyancy="-200"></simobj>
+		<behavior type="death" style="shatter" radius="80" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="mech" method="cpu" fire="laser" speed="20" aggression="100" range="120" firedelay="250" firepower="10"></ctrl>
+		<sounds die="aa_big_shatter" see="aa_mech_active" walk="aa_mechwalk" step="aa_mechstep" punch="aa_mech_punch" miss="whoosh1"></sounds>
+	</playobj>
+	
+	<playobj id="segunit" version="2" group="evil" type="movable" health="20" speed="1" strength="1" global="1" cid="312" ctype="hazard" cname="SegFault" calt="Roaming enemy that causes mischief.">
+		<obj type="segsymbol" creatorsymbolname="segunit_creator" z="200"></obj>
+		<material cor="0.5" cof="0.5" color="0xccb501"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.5" damp="1" g="0.01" rdamp="0"></simobj>
+		<ctrl type="seg" method="cpu" range="300" aggression="100"></ctrl>
+		<behavior type="death" style="shatter" radius="20" prio="5"></behavior>
+		<sounds see="aa_segunit3" harm="aa_segunit4" die="aa_small_shatter"></sounds>
+	</playobj>
+	
+	<playobj id="shark" version="2" group="evil" global="1" type="movable" health="80" speed="1" strength="1" cid="314" ctype="hazard" cname="Shark" calt="Sharks must stay in water to live">
+		<obj type="symbol" z="200"></obj>
+		<material cor="0.5" cof="0.5" color="0xccb501"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" g="1" rdamp="0" buoyancy="100"></simobj>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<ctrl type="swim" method="cpu" speed="10" firedelay="500" aggression="100" range="100"></ctrl>
+		<sounds bite="aa_bite"></sounds>
+	</playobj>
+	
+	<playobj id="grouperfish" version="2" group="evil" global="1" type="movable" health="240" speed="1" strength="1" cid="315" ctype="hazard" cname="Leonard" calt="Leonard is slow, but he's hungry!">
+		<obj type="symbol" z="200"></obj>
+		<material cor="0.5" cof="0.5" color="0xccb501"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" g="1" rdamp="0" buoyancy="100"></simobj>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<ctrl type="swim" method="cpu" speed="3" firedelay="1000" aggression="100" range="100"></ctrl>
+		<sounds bite="aa_bite"></sounds>
+	</playobj>	
+	
+	<playobj id="mutant" version="2" group="evil" type="biped" jump="500" health="60" speed="2" strength="1" global="1" cid="316" ctype="hazard" cname="Mutant">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="mutant" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="15" aggression="100"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_mutant1,aa_growl" die="aa_mutant2" jump="grunt4" harm="growl2,growl4,aa_growl" fall="punch2" scratch_high_hit="slash1,slash5,slash6" scratch_middle_hit="slash1,slash5,slash6"></sounds>
+	</playobj>
+	
+	<playobj id="mutant2" version="2" group="evil" type="biped" jump="500" health="60" speed="1" strength="1" global="1" cid="317" ctype="hazard" cname="Mutant">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="mutant2" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="15" aggression="100"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_mutant1" die="aa_mutant2" jump="grunt4" harm="growl2,growl4,aa_growl" fall="punch2" scratch_high_hit="slash1,slash5,slash6" scratch_middle_hit="slash1,slash5,slash6"></sounds>
+	</playobj>
+	
+	<playobj id="mutant3" version="2" group="evil" type="biped" jump="500" health="60" speed="0.6" strength="1" global="1" cid="318" ctype="hazard" cname="Big Mutant">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="mutant3" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.75" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="15" aggression="100"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_deep_growl" die="groan4" jump="aa_deep_yeah" harm="aa_meah,aa_deep_oof" fall="punch2" scratch_high_hit="slash1,slash5,slash6" scratch_middle_hit="slash1,slash5,slash6"></sounds>
+	</playobj>	
+	
+	<playobj id="native" version="2" group="evil" type="biped" jump="1500" health="40" speed="3" strength="1" global="1" cid="319" ctype="hazard" cname="Native" calt="Small enemy with a spear">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="native" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="rangedenemy" method="cpu" range="600"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_native1,aa_native2" die="aa_scream2" jump="aa_guy_eee" harm="aa_native3,aa_guy_ooh" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="merc" version="2" group="evil" type="biped" jump="1500" health="50" speed="1" strength="1" global="1" cid="320" ctype="hazard" cname="Mercenary" calt="Futuristic enemy with a laser gun">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="merc" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.8" damp="0.1" rdamp="0.8"></simobj>
+		<ctrl type="rangedenemy" method="cpu" range="500" aggression="100"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_guymasked_halt" die="aa_scream" jump="aa_guymasked_eee" kick="whoosh1" harm="aa_guymasked_ow,aa_guymasked_ooh,aa_guymasked_aah" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="minion" version="2" group="evil" type="biped" jump="1500" health="50" speed="0.5" strength="1" global="1" cid="321" ctype="hazard" cname="Minion" calt="Futuristic enemy with a staff weapon">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="minion" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.8" damp="0.2" rdamp="0.8"></simobj>
+		<ctrl type="rangedenemy" method="cpu" range="400" speed="1" aggression="400" firedelay="200"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_guymasked_halt" die="aa_scream" kick="whoosh1" jump="aa_guymasked_eee" harm="aa_guymasked_ow,aa_guymasked_ooh,aa_guymasked_aah" fall="punch2" strike_middle_defend="whap2,whap3" strike_high_defend="whap2,whap3"></sounds>
+	</playobj>
+	
+	<playobj id="rocky" version="2" group="evil" type="biped" jump="1500" health="500" speed="2" strength="1" global="1" cid="322" ctype="hazard" cname="Rocky" calt="Large enemy with a strong punch">
+		<options skeleton="skeleton_longhand"></options>
+		<obj type="biped" symbolname="rocky" skeleton="skeleton_longhand" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="130"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="bloom" prio="5"></behavior>
+		<sounds see="aa_rocky1" die="groan1" jump="grunt1,woahdeep1" kick="whoosh1" harm="growl3,aa_rocky2" fall="punch2" punch_middle_hit="aa_punch6" punch_high_hit="aa_punch6"></sounds>
+	</playobj>
+	
+	<playobj id="robot2" version="2" group="evil" type="biped" jump="500" health="60" speed="2" strength="1" global="1" cid="323" ctype="hazard" cname="Robot">
+		<options skeleton="simple_skeleton"></options>
+		<obj type="biped" symbolname="robot2" skeleton="simple_skeleton" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="0.5" damp="1" rdamp="0.8"></simobj>
+		<ctrl type="enemy" method="cpu" range="15" aggression="100"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="stand" prio="30"></behavior>
+		<behavior type="walk" prio="20"></behavior>
+		<behavior type="swim" prio="10"></behavior>
+		<behavior type="death" style="shatter" radius="40" prio="5"></behavior>
+		<sounds see="aa_robot1,aa_segunit1" die="aa_small_shatter" jump="aa_segunit2" harm="aa_robot2,aa_segunit2,aa_tiny_shatter" fall="punch2" scratch_high_hit="slash1,slash5,slash6" scratch_middle_hit="slash1,slash5,slash6"></sounds>
+	</playobj>
+	
+	<playobj id="robot1" version="2" group="evil" cid="324" ctype="hazard" cname="Big Robot" speed="0.5" type="movable" global="1" health="250" calt="The big robot gives a powerful punch!">
+		<obj type="mech" symbolname="robot1" z="10"></obj>
+		<material cor="0.5" cof="0.9" color="0x999999"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE" m="1.5" damp="0.15" rdamp="0" buoyancy="-200"></simobj>
+		<behavior type="death" style="shatter" radius="80" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="mech" method="cpu" fire="laser" speed="1" aggression="100" range="120" firedelay="250" firepower="5"></ctrl>
+		<sounds see="aa_robot3" die="aa_big_shatter" walk="aa_mechwalk3" step="aa_mechstep" punch="aa_mech_punch" miss="whoosh1"></sounds>
+	</playobj>
+	
+	
+	<!-- ******************** -->	
+	
+	<!-- HAZARDS -->
+	<!-- ******************** -->		
+	
+	<playobj id="hotblock" map="1" cid="100" ctype="hazard" cname="HotBlock" calt="Causes damage when touched">
+		<obj type="symbol" symbolname="hotblock" castshadow="1" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.5" self_illuminate="1"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="harmtouch" method="cpu" strength="1" effect="burneffect"></ctrl>
+		<sounds collide="burning1"></sounds>
+	</playobj>
+	
+	<playobj id="icicle" type="control" cid="101" ctype="hazard" cname="Spike" calt="Will fall and cause damage if walked under">
+		<obj type="symbol" symbolname="icicle" z="30"></obj>
+		<simobj type="vel" ct="CAPSULE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="drop" method="cpu" strength="10" effect="droptoucheffect"></ctrl>
+	</playobj>
+	
+	<playobj id="spikeblock" map="1" cid="106" ctype="hazard" cname="SpikeBlock" calt="Causes damage when you fall on it">
+		<obj type="symbol" castshadow="1" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="harmtouch" method="cpu" strength="20" pressure="1" effect="droptoucheffect"></ctrl>
+	</playobj>
+	
+	<playobj id="barrel" type="control" map="1" cid="107" ctype="hazard" cname="Barrel" calt="Shoot this and it explodes">
+		<obj type="symbol" receiveshadow="1" z="10"></obj>
+		<material cor="0.7" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<behavior type="weakblock" strength="8" damage="hit" explode="1" radius="100"></behavior>
+		<sounds explode="explosion_bigger"></sounds>
+	</playobj>
+	
+	<playobj id="beam_harmer" map="0" cid="102" ctype="hazard" cname="EnergyBeam" calt="Causes damage when walked through">
+		<obj type="symbol" symbolname="beam_harmer" z="10"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="OBB" rt="SLOW"></simobj>
+		<ctrl type="beam" strength="1" sound="beam1"></ctrl>
+	</playobj>
+	
+	<playobj id="steamer" type="control" cid="103" ctype="hazard" cname="Steamer" calt="Slight damage with vertical force">
+		<obj type="symbol" z="10" r="-90"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="proximity" method="cpu" spawn="steam" range="300" delay="5000"></ctrl>
+	</playobj>
+	
+	<playobj id="crusher" version="2" type="control" map="1" rotate="true" cid="220" ctype="hazard" cname="Crusher" calt="Large motorized compactor that causes damage if it closes on you">
+		<obj type="symbol" symbolname="crusher" creatorsymbolname="crusher_creator" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="IGNORE" pen="15"></simobj>
+		<ctrl type="crusher" method="cpu" speed="3"></ctrl>
+	</playobj>
+	
+	<playobj id="wheel" cid="104" ctype="hazard" cname="Wheel">
+		<obj type="symbol" symbolname="wheel" z="20"></obj>
+		<material cor="1" cof="0.1" self_illuminate="1"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.4" g="0.5" damp="1" rdamp="0.1"></simobj>
+	</playobj>
+
+	<playobj id="wheelsmall" cid="105" ctype="hazard" cname="SmallWheel">
+		<obj type="symbol" symbolname="wheelsmall" z="20"></obj>
+		<material cor="1" cof="0.1"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.4" g="0.5" damp="1" rdamp="0.1"></simobj>
+	</playobj>
+
+	
+	<!-- ******************** -->	
+	
+	<!-- POWERUPS -->
+	<!-- ******************** -->	
+		
+	<playobj id="extralife" version="2" cid="216" ccache="1" ctype="powerup" cname="Extra Life" calt="">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="extralife" power="1" sound="aa_powerup_chime"></ctrl>
+	</playobj>
+	
+	<playobj id="checkpoint" version="2" cid="217" ctype="powerup" ccache="1" cname="Checkpoint" calt="When touched, it sets the place where extra lives respawn.">
+		<obj type="symbol" z="100"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="checkpoint" power="1" restore="5000" sound="clash11"></ctrl>
+	</playobj>
+	
+	<playobj id="newtorch" cid="150" ctype="tool" ccache="1" cname="Torch" calt="Allows you to see in the dark">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="torch" addtobelt="1" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="newshield" cid="151" ctype="tool" ccache="1" cname="Shield" calt="Get strong defense by holding down the SHIFT key">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="shield" power="15" addtobelt="1" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="armor1" cid="208" ctype="powerup" ccache="1" cname="Armor I">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="armor" power="1" sound="aa_sword_scrape" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="armor2" cid="209" ctype="powerup" ccache="1" cname="Armor II">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="armor" power="2" sound="aa_sword_scrape" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="armor3" cid="210" ctype="powerup" ccache="1" cname="Armor III">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="armor" power="3" sound="aa_sword_scrape" restore="20000"></ctrl>
+	</playobj>
+
+	<playobj id="abilitystomp" version="2" cid="213" ctype="powerup" ccache="1" cname="Stomp Ability" calt="Allows you to stomp by pressing down after a jump.">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="stomp" power="1" restore="30000" sound="aa_ability"></ctrl>
+	</playobj>
+	
+	<playobj id="abilityroll" version="2" cid="214" ctype="powerup" ccache="1" cname="Roll Ability" calt="Allows you to roll by pressing down after a flip.">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="roll" power="1" restore="30000" sound="aa_ability"></ctrl>
+	</playobj>
+	
+	<playobj id="abilitysmash" version="2" cid="215" ctype="powerup" ccache="1" cname="Smash Ability" calt="Allows you to smash by pressing down after a jump and swing of your sword.">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="smash" power="1" restore="30000" sound="aa_ability"></ctrl>
+	</playobj>
+	
+	<playobj id="abilitydoublejump" version="2" cid="221" ctype="powerup" ccache="1" cname="DoubleJump" calt="Allows you to double jump by pressing up after a jump.">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="doublejump" power="1" restore="30000" sound="aa_ability"></ctrl>
+	</playobj>
+	
+	<playobj id="newjetpack" cid="152" ctype="tool" cname="JetPack" ccache="1" calt="Allows you to fly by holding the C key">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="backpack" power="150" addtobelt="1" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="newgun" cid="153" ctype="tool" cname="Gun" ccache="1" calt="Rapid fire laser weapon">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="gun" power="15" addtobelt="1" restore="40000"></ctrl>
+	</playobj>
+	
+	<playobj id="newguntriple" cid="158" ctype="tool" ccache="1" cname="BlastGun" calt="Triple-fire laser action">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="guntriple" power="15" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newblaster" cid="154" ctype="tool" ccache="1" cname="RailGun" calt="High power pulse weapon">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="blaster" power="5" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newmousegun" version="2" cid="163" ctype="tool" ccache="1" cname="Mouse Gun" calt="High precision laser weapon controlled by the mouse. 20 shots per powerup.">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="mousegun" power="20" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newflamethrower" cid="159" ctype="tool" ccache="1" cname="FlameThrower" calt="Your favorite propane accessory">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="flamethrower" power="10" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newgrenade" cid="155" ctype="tool" ccache="1" cname="Grenades" calt="High power explosives">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="grenade" power="3" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newgrapplegun" cid="156" ctype="tool" ccache="1" cname="Grapple" calt="Allows you to hook onto objects and swing by holding the SHIFT key">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="grapple" power="300" addtobelt="1" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="newpowerglove" cid="157" ctype="tool" ccache="1" cname="PowerGluv" calt="Allows you to move objects with your mind by holding the SHIFT key">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="powerglove" power="150" addtobelt="1" restore="20000"></ctrl>
+	</playobj>
+	
+	<playobj id="newbigsword" version="2" cid="160" ctype="tool" ccache="1" cname="Big Sword" calt="A more powerful sword you can bash with, 20 swings per powerup">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="bigsword" power="20" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newmace" version="2" cid="161" ctype="tool" ccache="1" cname="Mace" calt="A very powerful melee weapon, 20 swings per powerup">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="mace" power="20" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="newwhip" version="2" cid="162" ctype="tool" ccache="1" cname="Whip" calt="Oh snap! No you didn't!">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="whip" power="0" addtobelt="1"></ctrl>
+	</playobj>
+	
+	<playobj id="nugget" cid="200" ctype="powerup" ccache="1" cname="Cookie" calt="Gives you +5 health">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="health" power="10"></ctrl>
+	</playobj>
+
+	<playobj id="megahealth" cid="201" ctype="powerup" ccache="1" cname="MedKit" calt="Gives you +50 health">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="health" power="50"></ctrl>
+	</playobj>
+	
+	<playobj id="crystal" goal="1" cid="202" ctype="powerup" ccache="1" cname="Crystal" calt="Adding this object to your game will change it to a 'Capture the Crystal' game">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="crystal" global="1" power="1" spendatend="1" sound="crystal"></ctrl>
+	</playobj>
+	
+	<playobj id="escapepod" goal="1" unique="1" cid="212" ctype="powerup" cname="EscapePod" calt="Adding this object to your game will change it to a 'Find the Escape Pod' game">
+		<obj type="symbol" z="300"></obj>
+		<material></material>
+		<simobj type="vel" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="escapepod" method="cpu"></ctrl>
+	</playobj>
+	
+	<playobj id="canisterblue" cid="203" ctype="powerup" ccache="1" cname="GluvEnergy">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="powerglove" power="150"></ctrl>
+	</playobj>
+
+	<playobj id="canistergreen" cid="204" ctype="powerup" ccache="1" cname="GrappleEnergy">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="grapple" power="150"></ctrl>
+	</playobj>
+	
+	<playobj id="canisterpurple" cid="205" ctype="powerup" ccache="1" cname="RailGunAmmo">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="blaster" power="20"></ctrl>
+	</playobj>
+	
+	<playobj id="canisterred" cid="206" ctype="powerup" ccache="1" cname="GunAmmo">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="gun" power="50"></ctrl>
+	</playobj>
+	
+	<playobj id="fuelcan" cid="207" ctype="powerup" ccache="1" cname="JetFuel">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="power" method="cpu" attrib="backpack" power="300"></ctrl>
+	</playobj>
+	
+	<playobj id="atomic" cid="211" ctype="powerup" ccache="1" cname="Atomic" calt="Makes you 3x stronger">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="atomic" modifier="1" sound="atomic"></ctrl>
+	</playobj>
+	
+	<playobj id="rover" version="2" cid="65" ctype="powerup" cname="Rover" type="movable" health="300" calt="Get in and drive!">
+		<obj type="symbol" symbolname="rover" subsymbolname="rovertire" creatorsymbolname="rover_creator" z="10" graphicsrects="body,wheel_lt,wheel_rt"></obj>
+		<material cor="0.5" cof="0.5" damage="1"></material>
+		<simobj type="compound" ct="CIRCLE" rt="BOUNCE_ALL_BUT_FOCUSOBJ" radius="50" m="0.75" g="0.5" damp="0.25" rdamp="0.8" buoyancy="400" leakage="0" nosleep="1">[[false, -70, 40], [true, 70, 40]]</simobj>
+		<behavior type="death" style="shatter" radius="40" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="drive" method="kbd"></ctrl>
+		<sounds die="aa_big_shatter" board="aa_motor_start" unboard="aa_motor_exit" rev="aa_motor_rev" juice="aa_motor_juice"></sounds>
+	</playobj>
+	
+	<playobj id="jeep" version="2" cid="66" ctype="powerup" cname="Jeep" type="movable" health="400" calt="Get in and drive!">
+		<obj type="turretsymbol" symbolname="jeep" subsymbolname="jeeptire" creatorsymbolname="jeep_creator" z="10" graphicsrects="body,wheel_lt,wheel_rt"></obj>
+		<material cor="0.5" cof="0.5" damage="1"></material>
+		<simobj type="compound" ct="CIRCLE" rt="BOUNCE_ALL_BUT_FOCUSOBJ" radius="50" m="0.75" g="0.5" damp="0.25" rdamp="0.8" buoyancy="300" leakage="0.25" nosleep="1">[[false, -70, 40], [true, 70, 40]]</simobj>
+		<behavior type="death" style="shatter" radius="40" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="drive" method="kbd" projectile="laser" firedelay="250"></ctrl>
+		<sounds die="aa_big_shatter" hit="mortar" board="aa_motor_start" unboard="aa_motor_exit" rev="aa_motor_rev" juice="aa_motor_juice"></sounds>
+	</playobj>
+	
+	<playobj id="saucer" version="2" cid="348" ctype="powerup" cname="Hovership" type="movable" health="100" calt="Get in and fly!">
+		<obj type="symbol" symbolname="saucer" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE_ALL_BUT_FOCUSOBJ" m="2" damp="0.15" rdamp="0" buoyancy="-200"></simobj>
+		<behavior type="death" style="shatter" radius="40" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="fly" method="kbd" projectile="laserbig" firedelay="250"></ctrl>
+		<sounds die="aa_big_shatter" board="aa_saucer_start" unboard="aa_motor_exit" rev="aa_saucer_rev" juice="aa_saucer_rev"></sounds>
+	</playobj>
+	
+	<playobj id="mech" version="2" cid="67" ctype="powerup" cname="PowerSuit" type="movable" health="500" calt="Get in and KA-CHUNK!">
+		<obj type="mech" symbolname="mech" z="10"></obj>
+		<material cor="0.5" cof="0.9"></material>
+		<simobj type="mot" ct="CAPSULE" rt="BOUNCE_ALL_BUT_FOCUSOBJ" m="2" damp="0.15" rdamp="0" buoyancy="-200"></simobj>
+		<behavior type="death" style="shatter" radius="80" prio="5" effect="explosionbig"></behavior>
+		<ctrl type="mech" method="kbd" projectile="laser" firedelay="250"></ctrl>
+		<sounds die="aa_big_shatter" hit="mortar" walk="aa_mechwalk3" step="aa_mechstep" punch="aa_mech_punch" miss="whoosh1" board="aa_floop"></sounds>
+	</playobj>
+	
+	<playobj id="allyprobe" group="good" type="movable" health="20" speed="1" strength="1" global="1" cid="325" ctype="powerup" cname="Ally" calt="Flying robotic ally with a deadly laser.">
+		<obj type="symbol" z="200"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" m="0.5" damp="0.9" g="0.01" rdamp="0.8"></simobj>
+		<ctrl type="flyingally" method="cpu" range="300" aggression="100" fire="laser" firedelay="250" firepower="100" bank="1" speed="3"></ctrl>
+		<behavior type="collide"></behavior>
+		<behavior type="death" style="bloom" radius="20" prio="5"></behavior>
+		<sounds></sounds>
+	</playobj>
+
+	<!-- ******************** -->	
+	
+	<!-- DOORS, SWITCHES, TRIGGER BLOCKS & KEYS -->
+	<!-- ******************** -->
+		
+	<playobj id="neardoor" map="1" cid="250" ctype="trigger" cname="AutoDoor">
+		<obj type="symbol" symbolname="door" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" near="1"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse"></sounds>
+	</playobj>
+	
+	<playobj id="touchdoor" map="1" cid="251" ctype="trigger" cname="TouchDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse"></sounds>
+	</playobj>
+	
+	<playobj id="touchdoorhorizontal" map="1" cid="252" ctype="trigger" cname="TouchFloor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse"></sounds>
+	</playobj>
+	
+	<playobj id="keyblue" cid="253" ctype="trigger" cname="BlueKey">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="blue" power="1"></ctrl>
+	</playobj>
+	
+	<playobj id="keygreen" cid="254" ctype="trigger" cname="GreenKey">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="green" power="1"></ctrl>
+	</playobj>
+	
+	<playobj id="keyyellow" cid="255" ctype="trigger" cname="YellowKey">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="yellow" power="1"></ctrl>
+	</playobj>
+	
+	<playobj id="keypurple" version="2" cid="283" ctype="trigger" cname="PurpleKey">
+		<obj type="symbol" z="300"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="REPORT_ONLY"></simobj>
+		<ctrl type="power" method="cpu" attrib="purple" power="1"></ctrl>
+	</playobj>
+	
+	<playobj id="touchdoorblue" map="1" rotate="true" cid="256" ctype="trigger" cname="BlueDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" key="blue"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="touchdoorgreen" map="1" rotate="true" cid="257" ctype="trigger" cname="GreenDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" key="green"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="touchdooryellow" map="1" rotate="true" cid="258" ctype="trigger" cname="YellowDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" key="yellow"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="touchdoorhorizontalpurple" version="2" map="1" cid="279" ctype="trigger" cname="PurpleDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" key="purple"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="onewaydoor" version="2" rotate="true" map="1" cid="277" ctype="trigger" cname="OneWayDoor">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" oneway="270"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="trapdoordown" version="2" map="1" cid="280" ctype="trigger" cname="TrapDoor" calt="This is a trap door you can only fall down through.">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" oneway="0"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="trapdoorup" version="2" map="1" cid="281" ctype="trigger" cname="TrapDoor" calt="This is a trap door you can only jump up through.">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="door" method="cpu" oneway="180"></ctrl>
+		<sounds open="electric_door" close="electric_door_reverse" locked="locked1"></sounds>
+	</playobj>
+	
+	<playobj id="trapdoorfake" version="2" map="1" cid="282" ctype="trigger" cname="FakeDoor" calt="This looks like a trap door but is really solid floor.">
+		<obj type="symbol" z="10"></obj>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+	</playobj>
+	
+	<playobj id="stonewall_large" version="2" linkable="1" map="1" cid="285" ctype="trigger" cname="BurstTile" calt="This is a linkable item that it will burst when its link is activated">
+		<obj type="tile" tile="119" castshadow="1" tilescale="2" receiveshadow="0" z="10"></obj>
+		<material cor="0.5" cof="0.9" ></material>
+		<ctrl type="burst" method="cpu" near="1"></ctrl>
+		<behavior type="death" style="remove" radius="20" prio="5" effect="burst"></behavior>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<sounds die="explosion"></sounds>
+	</playobj>
+	
+	<playobj id="permaclosedoor" version="2" type="control" rotate="true" linkable="1" cid="278" ctype="trigger" cname="Closer" calt="Large wall that closes permanently when triggered">
+		<obj type="symbol" symbolname="permaclosedoor" creatorsymbolname="permaclosedoor_creator" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="IGNORE" pen="15"></simobj>
+		<ctrl type="crusher" method="cpu" mode="close" speed="1" started="0" yoyo="0" ></ctrl>
+	</playobj>
+	
+	<playobj id="doorswitch" version="2" type="control" map="0" cid="275" ctype="trigger" cname="RemoteSwitch" calt="Drag links onto this linkable switch to link them.">
+		<obj type="symbol" creatorsymbolname="doorswitch_creator" z="-7"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="link" method="cpu"></ctrl>
+		<sounds switch="switch1"></sounds>
+	</playobj>
+	
+	<playobj id="invisibleswitch" version="2" type="control" map="0" cid="284" ctype="trigger" cname="InvisibleSwitch" calt="This switch is invisible in the game. Drag links onto this linkable switch to link them.">
+		<obj type="symbol" creatorsymbolname="invisibleswitch_creator" z="-7"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="link" method="cpu"></ctrl>
+		<sounds switch="switch1"></sounds>
+	</playobj>
+	
+	<playobj id="magiclock" version="2" type="control" map="0" cid="276" ctype="trigger" cname="MagicSwitch" calt="Drag links onto this linkable switch to link them.">
+		<obj type="symbol" creatorsymbolname="magiclock_creator" z="-7"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="link" method="cpu"></ctrl>
+		<sounds switch="switch1"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor1" version="2" type="control" map="0" cid="269" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor2" version="2" type="control" map="0" cid="270" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor3" version="2" type="control" map="0" cid="271" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor4" version="2" type="control" map="0" cid="272" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor5" version="2" type="control" map="0" cid="273" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+	
+	<playobj id="leveldoor6" version="2" type="control" map="0" cid="274" ctype="trigger" cname="Level Door" calt="This is a door to the next level, which will open when the level mission is complete.">
+		<obj type="symbol" z="-8"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="PASSTHROUGH"></simobj>
+		<ctrl type="leveldoor" method="cpu" delay="0"></ctrl>
+		<sounds locked="locked1" open="materialize1" enter="aa_ability" leave="aa_boy_hee"></sounds>
+	</playobj>
+
+	<playobj id="temporalblockswitchblue" type="control" map="1" cid="259" ctype="trigger" cname="BlueSwitch">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="switch" method="cpu" name="blue" local="1" delay="2000"></ctrl>
+		<sounds switch="switch1" trigger="materialize1"></sounds>
+	</playobj>
+
+	<playobj id="temporalblockblue" type="control" map="1" cid="260" ctype="trigger" cframe="14" cname="BlueRing">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5" flicker="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="trigger" method="cpu" name="blue" delay="6000"></ctrl>
+		<sounds trigger="materialize1" untrigger="dematerialize1"></sounds>
+	</playobj>
+	
+	<playobj id="temporalblockswitchgreen" type="control" map="1" cid="261" ctype="trigger" cname="GreenSwitch">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="switch" method="cpu" name="green" local="1" delay="2000"></ctrl>
+		<sounds switch="switch1" trigger="materialize1"></sounds>
+	</playobj>
+	
+	<playobj id="temporalblockgreen" type="control" map="1" cid="262" ctype="trigger" cframe="14" cname="GreenRing">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5" flicker="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="trigger" method="cpu" name="green" delay="6000"></ctrl>
+		<sounds trigger="materialize1" untrigger="dematerialize1"></sounds>
+	</playobj>
+	
+	<playobj id="temporalblockswitchyellow" type="control" map="1" cid="263" ctype="trigger" cname="YellowSwitch">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="switch" method="cpu" name="yellow" local="1" delay="2000"></ctrl>
+		<sounds switch="switch1" trigger="materialize1"></sounds>
+	</playobj>
+	
+	<playobj id="temporalblockyellow" type="control" map="1" cid="264" ctype="trigger" cframe="14" cname="YellowRing">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5" flicker="1"></material>
+		<simobj type="sim" ct="CIRCLE" rt="BOUNCE"></simobj>
+		<ctrl type="trigger" method="cpu" name="yellow" delay="6000"></ctrl>
+		<sounds trigger="materialize1" untrigger="dematerialize1"></sounds>
+	</playobj>
+	
+	<playobj id="triggerblockswitchyellowgreen" type="control" map="1" cid="265" ctype="trigger" cname="PermSwitch">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="switch" method="cpu" name="yellowgreen" delay="2000" toggle="1"></ctrl>
+		<sounds switch="switch1" trigger="materialize1"></sounds>
+	</playobj>
+	
+	<playobj id="triggerblockyellowgreen" type="control" map="1" cid="266" ctype="trigger" cframe="11" cname="PermBlock">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5" flicker="1"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="trigger" method="cpu" name="yellowgreen" delay="0"></ctrl>
+		<sounds trigger="materialize1" untrigger="dematerialize1"></sounds>
+	</playobj>
+	
+	<playobj id="triggerblockswitchorange" type="control" map="1" cid="267" ctype="trigger" cname="PermSwitch">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="switch" method="cpu" name="orange" delay="2000" toggle="1"></ctrl>
+		<sounds switch="switch1" trigger="materialize1"></sounds>
+	</playobj>
+	
+	<playobj id="triggerblockorange" type="control" map="1" cid="268" ctype="trigger" cname="PermBlock" calt="This block will start in the ON position in the game.">
+		<obj type="symbol" z="10"></obj>
+		<material cor="0.5" cof="0.5" flicker="1"></material>
+		<simobj type="sim" ct="OBB" rt="BOUNCE"></simobj>
+		<ctrl type="trigger" method="cpu" name="orange" delay="0" onatstart="1"></ctrl>
+		<sounds trigger="materialize1" untrigger="dematerialize1"></sounds>
+	</playobj>
+	
+
+	<!-- ******************** -->	
+	
+	<!-- PROJECTILES -->
+	<!-- ******************** -->	
+	
+	<playobj id="ray" cid="0" ctype="none">
+		<material self_illuminate="1"></material>
+		<obj type="symbol" symbolname="ray"></obj>
+	</playobj>	
+	
+	<playobj id="bullet" type="control" cid="0" ctype="none">
+		<obj type="symbol" cache="1" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" strength="5" speed="600" hiteffect="bullethiteffect"></ctrl>
+		<sounds create="gun1" hit="gun1_hit"></sounds>
+	</playobj>
+	
+	<playobj id="laser" type="control" cid="0" ctype="none">
+		<obj type="symbol" cache="1" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" strength="7" push="0.25" speed="600" hiteffect="laserhiteffect"></ctrl>
+		<sounds create="gun1" hit="gun1_hit"></sounds>
+	</playobj>
+	
+	<playobj id="laserbig" type="control" cid="0" ctype="none">
+		<obj type="symbol" cache="1" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" strength="10" push="0.25" speed="600" hiteffect="laserhiteffect"></ctrl>
+		<sounds create="gun1" hit="gun1_hit"></sounds>
+	</playobj>
+	
+	<playobj id="epulse" type="control" cid="0" ctype="none">
+		<obj type="symbol" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="4" strength="7" push="1" speed="300" hiteffect="epulsehiteffect"></ctrl>
+		<sounds create="aa_epulse" hit="gun1_hit"></sounds>
+	</playobj>
+	
+	<playobj id="epulse2" type="control" cid="0" ctype="none">
+		<obj type="symbol" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="4" strength="12" push="1" speed="450" hiteffect="laserhiteffect"></ctrl>
+		<sounds create="aa_epulse2" hit="gun1_hit"></sounds>
+	</playobj>
+	
+	<playobj id="arrow" type="control" cid="0" ctype="none">
+		<obj type="symbol" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="10" strength="20" drop="15" speed="600" hiteffect="clasheffect2" bounceffect="clasheffect3" bounce="1"></ctrl>
+		<sounds create="whip1" hit="whap2" bounce="whap3"></sounds>
+	</playobj>
+	
+	<playobj id="spear" type="control" cid="0" ctype="none">
+		<obj type="symbol" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="10" strength="20" drop="15" speed="600" hiteffect="clasheffect2" bounceffect="clasheffect3" bounce="1"></ctrl>
+		<sounds create="whip1" hit="whap2" bounce="whap3"></sounds>
+	</playobj>
+	
+	<playobj id="fireball" type="control" cid="0" ctype="none">
+		<obj type="symbol" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="10" strength="60" drop="5" speed="250" hiteffect="fireballhiteffect" bounceffect="fireballhiteffect"></ctrl>
+		<sounds create="mortar" hit="explosion_bigger" bounce="explosion"></sounds>
+	</playobj>
+	
+	<playobj id="iceblast" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="iceblast" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" speed="3"></ctrl>
+	</playobj>
+	
+	<playobj id="fireblast" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="fireblast" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" speed="2"></ctrl>
+	</playobj>
+	
+	<playobj id="plasmablast" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="plasmablast" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" speed="2"></ctrl>
+	</playobj>
+	
+	<playobj id="flameshoot" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="flameshoot" z="400"></obj>
+		<material self_illuminate="1" effects="false"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="spray" method="cpu" lifespan="2" strength="3" sound="firebreath1"></ctrl>
+	</playobj>
+	
+	<playobj id="flameshoot2" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="flameshoot" z="400"></obj>
+		<material self_illuminate="1" effects="false"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="spray" method="cpu" lifespan="2" strength="4" sound="firebreath1"></ctrl>
+	</playobj>
+	
+	<playobj id="steam" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="steamshoot" z="400"></obj>
+		<material self_illuminate="1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH"></simobj>
+		<ctrl type="spray" method="cpu" lifespan="3" strength="0.5" force="3" sound="steam" loop="1"></ctrl>
+	</playobj>
+	
+	<playobj id="grenade" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="grenade"></obj>
+		<material cor="0.5" cof="0.5" self_illuminate="1"></material>
+		<simobj type="mot" ct="CIRCLE" rt="BOUNCE" only="1" m="0.4" g="0.5" damp="0.29" rdamp="0.1" nosleep="1"></simobj>
+		<ctrl type="bomb" method="cpu" strength="30" radius="400" lifespan="9" speed="0"></ctrl>
+		<sounds destroy="explosion_bigger" tick="claymore_beep"></sounds>
+	</playobj>
+	
+	<playobj id="throwingstar" type="control" cid="0" ctype="none">
+		<obj type="symbol" symbolname="throwingstar"></obj>
+		<material cor="1" cof="0.1"></material>
+		<simobj type="vel" ct="CIRCLE" rt="PASSTHROUGH" bound="1"></simobj>
+		<ctrl type="projectile" method="cpu" lifespan="3" strength="10" speed="300" hiteffect="clasheffect2"></ctrl>
+		<sounds create="throw1" hit="hit1"></sounds>
+	</playobj>
+	
+	
+	<!-- ******************** -->	
+	
+	<!-- BIPED SKELETONS -->
+	<!-- ******************** -->		
+	
+	
+	<skeleton id="simple_skeleton">
+		<bone name="body" t="1" p="1">	
+			<bone name="torso"></bone>
+			<bone name="head" a="-45" b="45" t="1" p="1"></bone>
+			<bone name="arm_rt" a="-180" b="180" t="1">
+				<bone name="hand_rt" a="-45" b="45" t="1" p="1"></bone>
+			</bone>
+			<bone name="arm_lt" a="-180" b="180" t="1">
+				<bone name="hand_lt" a="-45" b="45" t="1" p="1"></bone>
+			</bone>		
+			<bone name="leg_rt" a="-30" b="90" t="1"></bone>
+			<bone name="leg_lt" a="-90" b="30" t="1"></bone>		
+		</bone>
+	</skeleton>
+	
+	<skeleton id="skeleton_longhand">
+		<bone name="body" t="1" p="1">	
+			<bone name="torso"></bone>
+			<bone name="head" a="-45" b="45" t="1" p="1"></bone>
+			<bone name="arm_rt" a="-180" b="180" t="1">
+				<bone name="hand_rt" a="-180" b="180" t="1" p="1"></bone>
+			</bone>
+			<bone name="arm_lt" a="-180" b="180" t="1">
+				<bone name="hand_lt" a="-180" b="180" t="1" p="1"></bone>
+			</bone>		
+			<bone name="leg_rt" a="-30" b="90" t="1"></bone>
+			<bone name="leg_lt" a="-90" b="30" t="1"></bone>		
+		</bone>
+	</skeleton>
+	
+</objects>

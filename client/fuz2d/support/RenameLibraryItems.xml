@@ -1,0 +1,12 @@
+﻿<dialog buttons="accept, cancel" title="Rename Library Items">
+	<vbox>
+		<hbox>
+			<label value="Find       " />
+			<textbox id="search" value="" />
+		</hbox>
+		<hbox>
+			<label value="Replace" />
+			<textbox id="replace" value="" />
+		</hbox>
+	</vbox>
+</dialog>

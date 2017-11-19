@@ -1,0 +1,1 @@
+﻿package fuz2d.util.delaunay {	public class ITriangle {				//the 3 points that make up the triangle (references key positions in points array)				public var p1:int;		public var p2:int;		public var p3:int;		public var eArray:Array; //this will store the edge IDs of all three triangle edges				public function ITriangle() {											}							}				}

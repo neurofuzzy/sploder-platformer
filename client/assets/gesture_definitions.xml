@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<playobj type="biped">
+		
+		<biped action="strike">
+			
+			<facing direction="left">
+				<gesture name="attack_low" hold="200">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":30,"hand_rt":{"r":45}},"head":{"r":-25}}},"time":200},"p1":{"data":{"body":{"r":-20,"arm_rt":{"r":155,"hand_rt":{"r":-45}},"head":{"r":20}}},"time":100}}</gesture>
+				<gesture name="attack_middle" hold="100">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":210,"hand_rt":{"r":45}}}},"time":100},"p1":{"data":{"body":{"r":-10,"arm_rt":{"r":105,"hand_rt":{"r":-10}}}},"time":100}}</gesture>
+				<gesture name="attack_high" hold="100">{"p0":{"data":{"body":{"r":25,"leg_lt":{"r":120},"head":{"r":-25},"arm_lt":{"r":5},"arm_rt":{"r":235,"hand_rt":{"r":45}}}},"time":250},"p1":{"data":{"body":{"r":-25,"leg_lt":{"r":15},"head":{"r":35},"arm_lt":{"r":50},"arm_rt":{"r":145,"hand_rt":{"r":-35}}}},"time":200}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="attack_low" hold="200">{"p0":{"data":{"body":{"r":-10,"arm_rt":{"r":150,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":200},"p1":{"data":{"body":{"r":20,"arm_rt":{"r":25,"hand_rt":{"r":45}},"head":{"r":-20}}},"time":100}}</gesture>
+				<gesture name="attack_middle" hold="100">{"p0":{"data":{"body":{"r":-10,"arm_rt":{"r":-15,"hand_rt":{"r":-40}}}},"time":50},"p1":{"data":{"body":{"r":20,"arm_rt":{"r":55,"hand_rt":{"r":20}}}},"time":100}}</gesture>
+				<gesture name="attack_high" hold="100">{"p0":{"data":{"body":{"r":-25,"leg_lt":{"r":0},"arm_lt":{"r":15},"arm_rt":{"r":-95,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":250},"p1":{"data":{"body":{"r":40,"leg_lt":{"r":165},"head":{"r":-40},"arm_lt":{"r":135},"arm_rt":{"r":20,"hand_rt":{"r":35}}}},"time":200}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="scratch">
+			
+			<facing direction="left">
+				<gesture name="all" hold="100">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":180,"hand_rt":{"r":45}}}},"time":150},"p1":{"data":{"body":{"r":-10,"arm_rt":{"r":145,"hand_rt":{"r":-10}}}},"time":300}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" hold="100">{"p0":{"data":{"body":{"r":-10,"arm_lt":{"r":-15,"hand_lt":{"r":-40}}}},"time":150},"p1":{"data":{"body":{"r":20,"arm_lt":{"r":25,"hand_lt":{"r":20}}}},"time":300}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="bash">
+			
+			<facing direction="left">
+				<gesture name="all" hold="200">{"p0":{"data":{"body":{"r":35,"leg_lt":{"r":120},"head":{"r":-25},"arm_lt":{"r":-105},"arm_rt":{"r":235,"hand_rt":{"r":45}}}},"time":350},"p1":{"data":{"body":{"r":-25,"leg_lt":{"r":15},"head":{"r":35},"arm_lt":{"r":50},"arm_rt":{"r":145,"hand_rt":{"r":-35}}}},"time":100}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" hold="200">{"p0":{"data":{"body":{"r":-35,"leg_lt":{"r":0},"arm_lt":{"r":-105},"arm_rt":{"r":-95,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":350},"p1":{"data":{"body":{"r":40,"leg_lt":{"r":165},"head":{"r":-40},"arm_lt":{"r":135},"arm_rt":{"r":20,"hand_rt":{"r":35}}}},"time":100}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="kick">
+			
+			<facing direction="left">
+				<gesture name="all" hold="350">{"p0":{"data":{"body":{"r":55,"leg_rt":{"r":145}},"time":0}}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" hold="350">{"p0":{"data":{"body":{"r":-55,"leg_lt":{"r":35}},"time":0}}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="whip">
+			
+			<facing direction="left">
+				<gesture name="all" hold="500">{"p0":{"data":{"body":{"r":65,"leg_lt":{"r":120},"head":{"r":-25},"arm_lt":{"r":-105},"arm_rt":{"r":275,"hand_rt":{"r":85}}}},"time":200},"p1":{"data":{"body":{"r":-40,"leg_lt":{"r":15},"head":{"r":40},"arm_lt":{"r":50},"arm_rt":{"r":120,"hand_rt":{"r":-5}}}},"time":100}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" hold="500">{"p0":{"data":{"body":{"r":-35,"leg_lt":{"r":0},"arm_lt":{"r":-105},"arm_rt":{"r":-95,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":200},"p1":{"data":{"body":{"r":40,"leg_lt":{"r":165},"head":{"r":-40},"arm_lt":{"r":135},"arm_rt":{"r":20,"hand_rt":{"r":35}}}},"time":100}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="punch">
+			
+			<facing direction="left">
+				<gesture name="attack_low" hold="200">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":-30,"hand_rt":{"r":160}},"head":{"r":-25}}},"time":200},"p1":{"data":{"body":{"r":-20,"arm_rt":{"r":90,"hand_rt":{"r":120}},"head":{"r":20}}},"time":100}}</gesture>
+				<gesture name="attack_middle" hold="300">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":210,"hand_rt":{"r":125}}}},"time":500},"p1":{"data":{"body":{"r":-10,"arm_rt":{"r":90,"hand_rt":{"r":90}}}},"time":100}}</gesture>
+				<gesture name="attack_high" hold="500">{"p0":{"data":{"body":{"r":25,"leg_lt":{"r":120},"head":{"r":-25},"arm_lt":{"r":5},"arm_rt":{"r":235,"hand_rt":{"r":45}}}},"time":400},"p1":{"data":{"body":{"r":-25,"leg_lt":{"r":15},"head":{"r":35},"arm_lt":{"r":50},"arm_rt":{"r":145,"hand_rt":{"r":-35}}}},"time":200}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="attack_low" hold="200">{"p0":{"data":{"body":{"r":-10,"arm_rt":{"r":150,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":200},"p1":{"data":{"body":{"r":20,"arm_rt":{"r":15,"hand_rt":{"r":-45}},"head":{"r":-20}}},"time":100}}</gesture>
+				<gesture name="attack_middle" hold="300">{"p0":{"data":{"body":{"r":-10,"arm_rt":{"r":180,"hand_rt":{"r":-120}}}},"time":500},"p1":{"data":{"body":{"r":20,"arm_rt":{"r":0,"hand_rt":{"r":0}}}},"time":100}}</gesture>
+				<gesture name="attack_high" hold="500">{"p0":{"data":{"body":{"r":-25,"leg_lt":{"r":0},"arm_lt":{"r":15},"arm_rt":{"r":-95,"hand_rt":{"r":-45}},"head":{"r":25}}},"time":400},"p1":{"data":{"body":{"r":40,"leg_lt":{"r":165},"head":{"r":-40},"arm_lt":{"r":135},"arm_rt":{"r":20,"hand_rt":{"r":-15}}}},"time":200}}</gesture>
+			</facing>
+
+		</biped>
+		
+		<biped action="point">
+			
+			<facing direction="left">
+				<gesture name="all" relax="100">{"p0":{"data":{"body":{"r":5,"arm_rt":{"r":225}}},"time":100}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" relax="100">{"p0":{"data":{"body":{"r":-5,"arm_rt":{"r":-45}}},"time":100}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="mousepoint">
+			
+			<facing direction="left">
+				<gesture name="all" relax="100">{"p0":{"data":{"body":{"r":5,"arm_rt":{"r":225}}},"time":100}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" relax="100">{"p0":{"data":{"body":{"r":-5,"arm_rt":{"r":-45}}},"time":100}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="throwleft">
+			
+			<facing direction="left">
+				<gesture name="all" hold="200" relax="500">{"p0":{"data":{"body":{"r":5,"arm_lt":{"r":175}}},"time":100}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="all" hold="200" relax="500">{"p0":{"data":{"body":{"r":-5,"arm_lt":{"r":5}}},"time":100}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="throw">
+			
+			<facing direction="left">
+				<gesture name="attack_low" relax="300">{"p0":{"data":{"body":{"r":10,"arm_rt":{"r":30},"head":{"r":-25}}},"time":200},"p1":{"data":{"body":{"r":-20,"arm_rt":{"r":200},"head":{"r":20}}},"time":120}}</gesture>
+				<gesture name="all" relax="300">{"p0":{"data":{"body":{"r":15,"head":{"r":-15},"leg_lt":{"r":120},"arm_lt":{"r":165},"arm_rt":{"r":350}}},"time":400},"p1":{"data":{"body":{"r":-10,"head":{"r":10},"leg_lt":{"r":50},"arm_lt":{"r":70},"arm_rt":{"r":105}}},"time":200}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="attack_low" relax="300">{"p0":{"data":{"body":{"r":-10,"arm_rt":{"r":150},"head":{"r":25}}},"time":200},"p1":{"data":{"body":{"r":20,"arm_rt":{"r":-30},"head":{"r":-20}}},"time":120}}</gesture>
+				<gesture name="all" relax="300">{"p0":{"data":{"body":{"r":-15,"head":{"r":25},"leg_lt":{"r":45},"arm_lt":{"r":20},"arm_rt":{"r":-155}}},"time":400},"p1":{"data":{"body":{"r":15,"head":{"r":-15},"leg_lt":{"r":110},"arm_lt":{"r":115},"arm_rt":{"r":65}}},"time":200}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="spray">
+			<facing direction="left">
+				<gesture name="attack_middle" hold="1000">{"p0":{"data":{"body":{"r":15,"arm_lt":{"r":65},"arm_rt":{"r":40},"head":{"r":-30}}},"time":1000},"p1":{"data":{"body":{"r":-30,"arm_lt":{"r":40},"arm_rt":{"r":15},"head":{"r":30}}},"time":200}}</gesture>
+			</facing>
+			<facing direction="right">
+				<gesture name="attack_middle" hold="1000">{"p0":{"data":{"body":{"r":-15,"arm_lt":{"r":145},"arm_rt":{"r":135},"head":{"r":30}}},"time":1000},"p1":{"data":{"body":{"r":30,"arm_lt":{"r":130},"arm_rt":{"r":130},"head":{"r":-30}}},"time":200}}</gesture>
+			</facing>
+		</biped>
+		
+		<biped action="die">
+			
+			<facing direction="left">
+				<gesture name="die">{"p0":{"data":{"body":{"r":65,"arm_rt":{"r":240},"leg_lt":{"r":120},"leg_rt":{"r":165},"head":{"r":20},"arm_lt":{"r":-45}}},"time":500}}</gesture>
+			</facing>
+			
+			<facing direction="right">
+				<gesture name="die">{"p0":{"data":{"body":{"r":-55,"leg_lt":{"r":120},"arm_rt":{"r":200},"leg_rt":{"r":170},"arm_lt":{"r":-70},"head":{"r":-25}}},"time":500}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="fall">
+			
+			<facing direction="left">
+				<gesture name="fall" relax="1000">{"p0":{"data":{"body":{"r":0,"leg_lt":{"r":0},"leg_rt":{"r":180},"head":{"r":0}}},"time":1000}}</gesture>
+			</facing>
+
+			<facing direction="right">
+				<gesture name="fall" relax="1000">{"p0":{"data":{"body":{"r":0,"leg_lt":{"r":0},"leg_rt":{"r":180},"head":{"r":0}}},"time":1000}}</gesture>
+			</facing>
+			
+		</biped>
+		
+		<biped action="kneel">
+			
+			<facing direction="center">
+				<gesture name="kneel" hold="500">{"p0":{"data":{"body":{"r":0,"arm_lt":{"r":0,"hand_lt":{"r":-60}},"arm_rt":{"r":180,"hand_rt":{"r":60}},"head":{"r":0}}},"time":150}}</gesture>
+			</facing>
+
+		</biped>
+			
+	</playobj>
+	
+</data>

@@ -1,0 +1,1 @@
+﻿package fuz2d.util.delaunay {		public class XYZ {				public var x:Number, y:Number, z:Number;				public function XYZ(_x:*=null, _y:*=null, _z:*=null) {			if (_x == null) {							} else {				this.x = _x;				this.y = _y;				this.z = _z;			}								}	}}

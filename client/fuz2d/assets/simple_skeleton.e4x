@@ -1,0 +1,23 @@
+skeletonXML = <skeleton>
+	
+	<bone name="body" t="1" p="1">
+		
+		<bone name="torso"></bone>
+		
+		<bone name="head" a="-45" b="45" t="1" p="1"></bone>
+
+		<bone name="arm_rt" a="-120" b="90" t="1">
+			<bone name="hand_rt" a="-45" b="45" t="1" p="1"></bone>
+		</bone>
+
+		<bone name="arm_lt" a="-90" b="120" t="1">
+			<bone name="hand_lt" a="-45" b="45" t="1" p="1"></bone>
+		</bone>		
+
+		<bone name="leg_rt" a="-30" b="90" t="1"></bone>
+		
+		<bone name="leg_lt" a="-90" b="30" t="1"></bone>	
+		
+	</bone>
+	
+</skeleton>;
